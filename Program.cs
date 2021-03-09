@@ -2,11 +2,16 @@
 
 namespace task1
 {
-    internal class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("hi");
+            LinkedList<string> linkedList = new LinkedList<string> {"one", "two", "three", "four"};
+            linkedList.Show();
+            linkedList.Remove("four");
+            linkedList.Show();
+            linkedList.Reverse();
+            linkedList.Show();
         }
     }
 }
