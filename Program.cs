@@ -17,6 +17,7 @@ namespace task1
             */
             
             //2
+            /*
             var binaryTree = new BinaryTree<int>();
 
             binaryTree.Add(8);
@@ -38,6 +39,17 @@ namespace task1
             Console.WriteLine(new string('-', 40));
             binaryTree.Remove(8);
             binaryTree.PrintTree();
+            */
+            
+            // 3
+            
+            int[] array = {4, 6, 1, 5, 3, 2 };
+            for(int i = 0; i < array.Length; i++)
+                Console.Write(array[i] + " ");
+            Console.WriteLine();
+            var newArray = Sort.InsertionSort(array); 
+            for(int i = 0; i < newArray.Length; i++)
+                Console.Write(newArray[i] + " ");
         }
     }
 }
